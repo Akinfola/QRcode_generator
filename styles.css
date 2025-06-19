@@ -92,8 +92,39 @@ footer {
     margin-top: 550px;
     color: rgb(255, 255, 255);
     text-align:  center;
-    
 }
+
+@media (max-width: 500px) {
+    .container {
+        width: 95vw;
+        padding: 15px 5vw;
+        min-width: unset;
+    }
+
+    h2 {
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+    .container input,
+    .container button {
+        height: 45px;
+        font-size: 15px;
+    }
+
+    #imgBox {
+        width: 100%;
+        max-width: 95vw;
+    }
+
+    footer {
+        font-size: 12px;
+        margin-top: 60vw;
+        padding: 10px 0;
+    }
+}
+    
+
 
 footer h2 {
     text-decoration: none;
