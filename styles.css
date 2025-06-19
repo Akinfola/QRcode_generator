@@ -125,7 +125,85 @@ footer {
 }
     
 
+    /* Extra small devices (max-width: 350px) */
+    @media (max-width: 350px) {
+        .container {
+            width: 98vw;
+            padding: 10px 1vw;
+        }
+        h2 {
+            font-size: 16px;
+        }
+        .container input,
+        .container button {
+            height: 38px;
+            font-size: 13px;
+        }
+        #imgBox {
+            width: 100%;
+            max-width: 98vw;
+        }
+        footer {
+            font-size: 10px;
+            margin-top: 80vw;
+        }
+    }
 
+    /* Medium devices (min-width: 501px) and (max-width: 900px) */
+    @media (min-width: 501px) and (max-width: 900px) {
+        .container {
+            width: 70vw;
+            padding: 20px 5vw;
+        }
+        h2 {
+            font-size: 26px;
+        }
+        #imgBox {
+            width: 60%;
+            max-width: 350px;
+        }
+        footer {
+            font-size: 14px;
+            margin-top: 30vw;
+        }
+    }
+    /* Stick footer to bottom */
+    html, body {
+        height: 100%;
+    }
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        flex: 1 0 auto;
+    }
+
+    footer {
+        flex-shrink: 0;
+        position: static;
+        margin-top: auto;
+    }
+    /* Large devices (min-width: 901px) */
+    @media (min-width: 901px) {
+        .container {
+            width: 400px;
+            padding: 25px 35px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+        #imgBox {
+            width: 200px;
+        }
+        footer {
+            font-size: small;
+            margin-top: 550px;
+        }
+    }
 footer h2 {
     text-decoration: none;
     padding-top: 50px;
